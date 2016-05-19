@@ -1,7 +1,7 @@
 # フロントエンド層
 
 - HTML
-    - HTML5 ◯
+    - HTML5 ◯ ☆
 - HTMLテンプレート言語
     - erb ◯
     - haml ◯
@@ -20,10 +20,10 @@
     - foundation ☓
     - など
 - JavaScript
-    - ES2015 ◯
+    - ES2015 ◯ ☆
     - CoffeeScript ◯
 - JavaScript フレームワーク
-    - React.js ◎
+    - React.js ◎ ☆
     - Vue.js ☓
     - Angular.js ☓
     - などなど
@@ -35,18 +35,18 @@
 # ミドルウェア層
 
 - DB
-    - MySQL ◎
+    - MySQL ◎ ☆
     - PostgreSQL △
 - WebServer(リバースプロキシ)
     - Apache △
-    - nginx ◯
+    - nginx ◯ ☆
 - AppServer
-    - unicorn △
-    - puma △
+    - unicorn △ ☆
+    - puma △ ☆
     - passenger △
 - nosql
-    - memcache △
-    - redis ☓
+    - memcache △ ☆
+    - redis ☓ ☆
     - mongodb ☓
 - Paas
     - heroku △
@@ -55,43 +55,43 @@
 # アプリケーション層
 
 - HTTP1.1
-    - ステータスコード
+    - ステータスコード △
     - 主要なヘッダ
-        - Cookies
-        - Cache
+        - Cookies △ ☆
+        - Cache △ ☆
         - など
-- HTTP2
-- SSL
+- HTTP2 △ ☆
+- SSL △
   - 適用や証明書の種類、取得方法など
   - Let's Encrypt
 - Ruby
-    - メタプログラミング ◯
+    - メタプログラミング △ ☆
     - など
 - Rails
     - Rack △
     - Asset Pipeline △
     - spring △
-    - パフォーマンス △
+    - パフォーマンス △ ☆
         - N+1
         - キャッシュ
     - など。たくさんありすぎ
-- SQL
+- SQL ◯
 - test
-    - RSpec ◯
-    - minitest ☓
-    - capybara ☓
+    - RSpec ◯ ☆
+    - minitest ☓ ☆
+    - capybara ☓ ☆
     - polgergeist / capybara-webkit ☓
 - CI
     - Jenkins ☓
     - CircleCI ◯
     - TravisCI ☓
-    - コードメトリクス
-        - codeclimate ☓
-        - houndci ☓
-        - coverall ☓
+    - コードメトリクス ☆
+        - codeclimate ☓ ☆
+        - houndci ☓ ☆
+        - coverall ☓ ☆
         - など
 - 認証
-  - Devise ◯
+  - Devise △
   - Sorcery ☓
   - など
 - 認可
@@ -99,7 +99,7 @@
   - Pundit ☓
   - など
 - API
-  - JSON API ◯
+  - JSON API ◯ ☆
   - versioning x
   - documentation △
   - など
@@ -113,7 +113,7 @@
     - DigitalOcean x
 - 仮想環境
     - Vagrant △
-    - Docker x
+    - Docker x ☆
     - Packer x
 - プロビジョニング
     - ansible △
@@ -132,19 +132,19 @@
 - ロードバランサ △
 - キャッシュ △
 - DNS △
-- linux
-    - プロセス △
-    - スレッド △
-    - ソケット △
+- linux ☆
+    - プロセス △ ☆
+    - スレッド △ ☆
+    - ソケット △ ☆
 - テスト
   - serverspec x
 
 # 設計
 
-- オブジェクト指向 ◯
-- デザインパターン △
-- マイクロサービス設計 △
-- API設計 ◯
+- オブジェクト指向 ◯ ☆
+- デザインパターン △ ☆
+- マイクロサービス設計 △ ☆
+- API設計 ◯ ☆
 - DBスキーマ設計 ◯
 
 # 全体にまたがるもの
@@ -170,15 +170,15 @@
 
 - 社内コミュニケーション ◯
 - 社外コミュニケーション
-    - 勉強会の参加、発表 △
-    - ブログ △
-    - OSS活動 △
+    - 勉強会の参加、発表 △ ☆
+    - ブログ △ ☆
+    - OSS活動 △ ☆
 - mobile application
     - iOS △
     - Android x
-- 他言語
-    - Go x
+- 他言語 ☆
+    - Go x ☆
     - Erlang x
     - Elixir x
-    - Haskell x
+    - Haskell x ☆
     - など
